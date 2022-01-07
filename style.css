@@ -42,6 +42,7 @@ h1 span {
 
 #buttons:hover {
   background-image: linear-gradient(#c32306, orange);
+  cursor: pointer;
 }
 
 .round_imgs {
