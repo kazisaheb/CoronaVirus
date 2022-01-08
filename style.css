@@ -29,7 +29,9 @@ h1 span {
   box-shadow: -5px 0px 0px 0px orangered;
   padding-left: 2%;
 }
-
+p{
+background-color: white;
+}
 #buttons {
   text-decoration: none;
   background-image: linear-gradient(orange, orangered);
