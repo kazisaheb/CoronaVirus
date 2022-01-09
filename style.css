@@ -19,15 +19,12 @@ h1 {
 
 .top_header {
   font-family: Libre Baskerville;
+  box-shadow: -5px 0px 0px 0px orangered;
+  padding-left: 2%;
 }
 
 h1 span {
   color: orange;
-}
-
-.top_header {
-  box-shadow: -5px 0px 0px 0px orangered;
-  padding-left: 2%;
 }
 
 #buttons {
@@ -104,10 +101,7 @@ h1 span {
   margin: 10px 0;
 }
 
-#fullname {
-  width: 50%;
-  padding: 7px 3px;
-}
+#fullname,
 #youremail {
   width: 50%;
   padding: 7px 3px;
@@ -148,3 +142,75 @@ footer h1 {
     flex-direction: column;
   }
 }
+
+/* Nav bar css */
+
+nav {
+  background-color: gray;
+  padding: 10px;
+}
+
+#logo {
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 33px;
+  display: inline;
+  padding: 1px 5px;
+}
+
+#logo:hover {
+  background-color: orangered;
+  transition-duration: 0.5s;
+}
+
+ul {
+  display: flex;
+  float: right;
+  background-color: gray;
+}
+ul li {
+  text-align: center;
+  display: flex;
+  list-style: none;
+  margin: 0 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 20px;
+}
+ul li a:active {
+  background-color: orange;
+}
+
+ul li a:hover {
+  background-color: orange;
+  transition: 0.5s;
+}
+
+/* Nav Media start */
+
+@media only screen and (max-width: 575px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul li {
+    display: none;
+  }
+
+  ul > #home {
+    display: block;
+  }
+
+  ul:hover > li {
+    display: block;
+  }
+}
+
+/* Nav Media end */
+/* Nav bar css end*/
