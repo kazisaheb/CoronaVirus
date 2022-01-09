@@ -146,23 +146,29 @@ footer h1 {
     flex-direction: column;
   }
 }
-
-/* #first_sec CSS */
-
+#first_sec {
+  margin-top: 70px;
+}
 /* Nav bar css */
 
 nav {
   background-color: gray;
-  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 #logo {
+  margin: 6px 20px;
   color: white;
   text-transform: uppercase;
   cursor: pointer;
   border: 2px solid white;
   border-radius: 33px;
-  display: inline;
+  display: inline-block;
   padding: 1px 5px;
 }
 
